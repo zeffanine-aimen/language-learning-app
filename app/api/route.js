@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
  
-//const API_KEY = "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";
 
 export async function POST(request) {
 
