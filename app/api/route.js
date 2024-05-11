@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
  
 
+
 export async function POST(request) {
 
     const req = await request.json();
@@ -8,7 +9,7 @@ export async function POST(request) {
     const options = {
         method: "POST",
         headers: {
-            "Authorization": `Bearer ${API_KEY}`,
+            "Authorization": `Bearer ${OPENAI_API_KEY}`,
             "Content-Type": 'application/json'
         },
         body: JSON.stringify({
